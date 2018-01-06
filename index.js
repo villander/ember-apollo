@@ -8,6 +8,7 @@ module.exports = {
 
   treeForAddon (tree) {
     const apolloClientPath = path.dirname(require.resolve('apollo-client/index.js'))
+
     let apolloClientTree = this.treeGenerator(apolloClientPath)
 
     if (!tree) {
